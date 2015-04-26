@@ -1,0 +1,20 @@
+tell application "Google Chrome"
+	activate
+end tell
+
+tell application "System Events"
+	tell process "Google Chrome"
+		tell menu bar 1
+			tell menu bar item "File"
+				tell menu "File"
+					click menu item "Close Window"
+				end tell
+			end tell
+			tell menu bar item "People"
+				tell menu "People"
+					click menu item "YOUR PROFILE HERE"
+				end tell
+			end tell
+		end tell
+	end tell
+end tell
