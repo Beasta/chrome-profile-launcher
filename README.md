@@ -12,6 +12,15 @@ To use
 4)Export as app with run only
 
 UPDATE LOG
+
 Last version: always closed the open window when running
 
-This version: I'm tryna make it check if chrome is open, and if it is, not close the window. God this should not be this hard. Right now, it isn't allowed assistive access, even though I did that in system preferences already.
+This version:
+
+What does work
+
+Switches open profile if both are open in separate windows
+
+What doesn't work
+
+Assistive access not enabled, even though I enabled it.
