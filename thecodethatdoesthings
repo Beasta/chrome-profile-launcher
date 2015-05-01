@@ -1,4 +1,4 @@
-set PROFILE to "School"
+set PROFILE to "YOURPROFILEHERE"
 if application "Google Chrome" is running then
 	tell application "System Events"
 		tell process "Google Chrome"
