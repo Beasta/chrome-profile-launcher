@@ -1,4 +1,4 @@
-set PROFILE to "Max"
+set PROFILE to "YOURPROFILEHERE"
 if application "Google Chrome" is running then
 	tell application "System Events" to tell process "Google Chrome"
 		set frontmost to true
