@@ -1,37 +1,16 @@
-set PROFILE to "YOURPROFILEHERE"
+set PROFILE to "Max"
 if application "Google Chrome" is running then
-	tell application "System Events"
-		tell process "Google Chrome"
-			tell menu bar 1
-				tell menu bar item "People"
-					tell menu "People"
-						click menu item PROFILE
-					end tell
-				end tell
-			end tell
-		end tell
+	tell application "System Events" to tell process "Google Chrome"
+		set frontmost to true
+		click menu item PROFILE of menu 1 of menu bar item "People" of menu bar 1
 	end tell
 end if
 if application "Google Chrome" is not running then
 	tell application "Google Chrome"
 		activate
 	end tell
-	try
-		tell application "System Events"
-			tell process "Google Chrome"
-				tell menu bar 1
-					tell menu bar item "File"
-						tell menu "File"
-							click menu item "Close Window"
-						end tell
-					end tell
-					tell menu bar item "People"
-						tell menu "People"
-							click menu item PROFILE
-						end tell
-					end tell
-				end tell
-			end tell
-		end tell
-	end try
+	tell application "System Events" to tell process "Google Chrome"
+		set frontmost to true
+		click menu item PROFILE of menu 1 of menu bar item "People" of menu bar 1
+	end tell
 end if
